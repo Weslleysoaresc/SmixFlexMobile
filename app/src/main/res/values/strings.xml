@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SmixFlexMobile</string>
+    <string name="title_login">LOGIN SISTEMA</string>
+    <string name="title_orcamento">ORÇAMENTO</string>
+    <string name="title_pedido">PEDIDO</string>
+    <string name="title_teladecliente">CADASTRO DE CLIENTE</string>
+    <string name="title_configuracao">CONFIGURAÇÃO</string>
+    <string name="lbl_orcamento">N° Orçamento:</string>
+    <string name="lbl_emailetele">Email e Telefone:</string>
+    <string name="lbl_pedido">N° Pedido:</string>
+    <string name="lbl_codigo">Código:</string>
+    <string name="lbl_descricao">Descrição:</string>
+    <string name="lbl_endereco">Endereço:</string>
+    <string name="lbl_cep">Cep:</string>
+    <string name="lbl_qtde">Qtde:</string>
+    <string name="lbl_rua">Rua:</string>
+    <string name="lbl_valor">Valor:</string>
+    <string name="lbl_numero">Numero:</string>
+    <string name="lbl_aniversario">Aniversário:</string>
+    <string name="lbl_complemento">Complemento:</string>
+    <string name="lbl_desconto">Desconto:</string>
+    <string name="lbl_subtotal">SubTotal:</string>
+    <string name="lbl_versao">Versão:</string>
+    <string name="lbl_copy">Copyright 2021 SmixSistemas</string>
+    <string name="btn_salvar">Salvar Cliente</string>
+    <string name="btn_sair">Sair</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="title_sucesso">SUCESSO</string>
+    <string name="msg_sucesso">Gravada com sucesso!</string>
+    <string name="alert_radio">Selecione uma opção!</string>
+</resources>

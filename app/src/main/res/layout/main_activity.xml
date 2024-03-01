@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conteudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rodape"
+        android:layout_below="@id/cabecalho"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Selecione uma opção:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMenu01"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_background"
+                android:elevation="12dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/btnMenu02"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_background"
+                android:elevation="12dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMenu03"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_background"
+                android:elevation="12dp"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnMenu04"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_background"
+                android:elevation="12dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMenu05"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_background"
+                android:elevation="12dp"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnMenu06"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button_background"
+                android:elevation="12dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rodape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            app:tabGravity="fill"
+            app:tabMode="fixed">
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tabLayout"
+            android:layout_below="@id/conteudo"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
